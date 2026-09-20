@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+
+<style>
+
+   body{background-image: url(https://cdn.cosmos.so/60eecd84-bd77-4573-828a-f1e81382bc8c?format=webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0px;}
+
+   #Bar{background-color: white;
+        padding: 10px;
+        display: flex; 
+        align-items: center; 
+        gap: 15px;
+        padding-left: 15px;}
+
+   a{font-family: 'Arial';
+    color: rgb(39, 39, 39);
+    font-size: 15px;}
+
+    #Products{display: grid;
+        place-items: center;}
+
+    #Selection{background-color: white;
+            padding: 20px;
+            font-family: 'Arial';
+            width: 30%;}
+
+    #SKUf{background-color: white;
+            padding: 20px;
+            font-family: 'Arial';
+            width: 30%;
+            margin-bottom: 20px;}
+
+    button{background-color:rgb(39, 39, 39);
+        color: white;
+        border: 2px solid rgb(39, 39, 39);
+        width: 100%;}
+
+    input{width: 100%;
+        font-family: 'Arial';
+        font-size: 15px;}
+
+    select{width: 100%;
+        font-family: 'Arial';
+        font-size: 15px;}
+
+</style>
+
+<body>
+
+    <div id="Bar">
+
+    <p style="font-family: 'Trebuchet MS'; font-size: 20px; color: #a5b0da"><b><i>Ishady</i></b></p>
+
+    <a href="index.html">Products</a>
+
+    <a href="SKU.html">SKU Generator</a>
+
+    </div>
+
+    <br>
+
+    <div id="Products">
+
+    <h1 style="font-family: 'Trebuchet MS'; font-size: 40px; color: #a5b0da">SKU Generator</h1><br><br>
+
+    <div id="Selection">
+
+    <label>Type:</label><br>
+    <select id="Selected">
+        <option value="Monochrome">Monochrome</option>
+        <option value="Multicolor">Multicolor</option>
+        <option value="Glitter">Glitter</option>
+    </select>
+    <br><br>
+
+    <label for="pName">Product Name:</label><br>
+    <input type="text" id="pName" name="pName">
+    <br><br>
+
+    <label for="sVal">Stock Value:</label><br>
+    <input type="number" id="sVal" name="sVal">
+    <br><br>
+
+    <button py-click="gSKU">Generate SKU:</button>
+
+    </div>
+    
+    
+   
+
+    <br>
+
+    <div id="SKUf">
+
+    <p style="font-family: 'Trebuchet MS'; font-size: 20px; color: #000000; text-align: center;">Generated SKU:</p>
+
+    <br>
+   
+    <div id="SKUR" style="color: rgb(39, 39, 39); text-align: center;"></div><br>
+    
+    <py-script type="py" src="main.py"></py-script> 
+
+    </div>
+
+    </div>
+
+    <p style="font-family: 'Arial'; color: white; font-size: 15px; text-align: center; margin: 20px;">Maria Coronel 10 - Ruby | @2026</p>
+   
+</body>
+</html>

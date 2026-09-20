@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+
+<style>
+
+   body{background-image: url(https://cdn.cosmos.so/60eecd84-bd77-4573-828a-f1e81382bc8c?format=webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0px;}
+
+   #Bar{background-color: white;
+        padding: 10px;
+        display: flex; 
+        align-items: center; 
+        gap: 15px;
+        padding-left: 15px;}
+
+   a{font-family: 'Arial';
+    color: rgb(39, 39, 39);
+    font-size: 15px;}
+
+    #Products{display: grid;
+        place-items: center;}
+
+    #Selection{background-color: white;
+            padding: 20px;
+            font-family: 'Arial';
+            width: 30%;}
+
+    #Price{background-color: white;
+            padding: 20px;
+            font-family: 'Arial';
+            width: 30%;
+            margin-bottom: 20px;}
+
+    button{background-color:rgb(39, 39, 39);
+        color: white;
+        border: 2px solid rgb(39, 39, 39);
+        width: 100%;}
+
+</style>
+
+<body>
+
+    <div id="Bar">
+
+    <p style="font-family: 'Trebuchet MS'; font-size: 20px; color: #a5b0da"><b><i>Ishady</i></b></p>
+
+    <a href="index.html">Products</a>
+
+    <a href="SKU.html">SKU Generator</a>
+
+    </div>
+
+    <br>
+
+    <div id="Products">
+
+    <h1 style="font-family: 'Trebuchet MS'; font-size: 40px; color: #a5b0da">Ishady Palattes</h1><br><br>
+
+    <div id="Selection">
+
+    <input type="checkbox" id="Morality" value=500>
+    <label for="Morality">[500] Morality</label>
+    <br><br>
+
+    <input type="checkbox" id="MEarth" value=650>
+    <label for="MEarth">[650] Mother Earth</label>
+    <br><br>
+
+    <input type="checkbox" id="Seduction" value=700>
+    <label for="Seduction">[700] Seduction</label>
+    <br><br>
+
+    <input type="checkbox" id="Embellishments" value=450>
+    <label for="Embellishments">[450] Embellishments</label>
+    <br><br>
+
+    <input type="checkbox" id="Dialectical" value=520>
+    <label for="Dialectical">[520] Dialectical</label>
+    <br><br><br>
+
+
+    <button py-click="Buy">Buy</button>
+
+    </div>
+    
+    
+   
+
+    <br>
+
+    <div id="Price">
+
+    <p style="font-family: 'Trebuchet MS'; font-size: 20px; color: #000000; text-align: center;">Receipt:</p>
+   
+    <div id="RES1" style="color: rgb(39, 39, 39)"></div><br>
+    <div id="RES2" style="color: rgb(39, 39, 39)"></div><br>
+    <div id="RES3" style="color: rgb(39, 39, 39)"></div><br>
+    <py-script type="py" src="main.py"></py-script> 
+
+    </div>
+
+    </div>
+
+    <p style="font-family: 'Arial'; color: white; font-size: 15px; text-align: center; margin: 20px;">Maria Coronel 10 - Ruby | @2026</p>
+   
+</body>
+</html>
